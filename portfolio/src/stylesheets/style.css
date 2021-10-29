@@ -353,6 +353,7 @@ header h3 {
   border-radius: 0.2rem;
 }
 .contact_email a,
+.contact_email h4,
 .resume a,
 .resume_icon {
   color: rgb(68, 68, 68);
