@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
+import OpenInNewRoundedIcon from "@mui/icons-material/OpenInNewRounded";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Projects() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <section className="projects container" id="projects">
       <h2 className="heading">Projects</h2>
       <div className="flex justify_between flex_wrap">
-        <article className="flex_28 ">
+        <article className="flex_28 " data-aos="fade-up">
           <h3 className="app_name">blog app</h3>
           <p>
             You’ve read all your free member-only stories, become a member to
@@ -33,7 +39,8 @@ function Projects() {
                   href="https://blog-application-six.vercel.app/"
                   target="blank"
                 >
-                  <i className="fab fa-creative-commons-share"></i>
+                  {/* <i className="fab fa-creative-commons-share"></i> */}
+                  <OpenInNewRoundedIcon />
                 </a>
               </li>
             </ul>
@@ -41,7 +48,7 @@ function Projects() {
           <div className="article_underline"></div>
         </article>
 
-        <article className="flex_28 ">
+        <article className="flex_28" data-aos="fade-down">
           <h3 className="app_name">conduit api</h3>
           <p>
             You’ve read all your free member-only stories, become a member to
@@ -65,7 +72,7 @@ function Projects() {
           <div className="article_underline"></div>
         </article>
 
-        <article className="flex_28 ">
+        <article className="flex_28 " data-aos="fade-up">
           <h3 className="app_name">Github battle</h3>
           <p>
             This project is a "Github Battle" app. You'll be able to see the
@@ -87,7 +94,7 @@ function Projects() {
               </li>
               <li>
                 <a href="https://github-battle-using-hooks.vercel.app/">
-                  <i className="fab fa-creative-commons-share"></i>
+                  <OpenInNewRoundedIcon />
                 </a>
               </li>
             </ul>
@@ -95,7 +102,7 @@ function Projects() {
           <div className="article_underline"></div>
         </article>
 
-        <article className="flex_28 ">
+        <article className="flex_28 " data-aos="fade-down">
           <h3 className="app_name">Shopping Cart</h3>
           <p>
             It is a small shopping cart inspired from flipkart, amazon , it will
@@ -116,7 +123,7 @@ function Projects() {
               </li>
               <li>
                 <a href="https://shopping-cart-using-hooks.vercel.app/">
-                  <i className="fab fa-creative-commons-share"></i>
+                  <OpenInNewRoundedIcon />
                 </a>
               </li>
             </ul>
@@ -124,7 +131,7 @@ function Projects() {
           <div className="article_underline"></div>
         </article>
 
-        <article className="flex_28 ">
+        <article className="flex_28" data-aos="fade-up">
           <h3 className="app_name">Netflix</h3>
           <p>
             Netflix application is streaming service that allows people to watch
@@ -144,7 +151,7 @@ function Projects() {
               </li>
               <li>
                 <a href="https://netflix-youtube.vercel.app/">
-                  <i className="fab fa-creative-commons-share"></i>
+                  <OpenInNewRoundedIcon />
                 </a>
               </li>
             </ul>
@@ -152,7 +159,7 @@ function Projects() {
           <div className="article_underline"></div>
         </article>
 
-        <article className="flex_28 ">
+        <article className="flex_28 " data-aos="fade-down">
           <h3 className="app_name">Amazon Videos</h3>
           <p>
             Amazon Videos is small application inspired from Amazon prime.There
@@ -174,7 +181,7 @@ function Projects() {
               </li>
               <li>
                 <a href="https://amazon-videos.vercel.app/">
-                  <i className="fab fa-creative-commons-share"></i>
+                  <OpenInNewRoundedIcon />
                 </a>
               </li>
             </ul>

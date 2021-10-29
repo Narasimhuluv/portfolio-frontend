@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Hero() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <section className="container flex justify_center hero column">
       <figure className="flex_48">
@@ -9,7 +14,12 @@ function Hero() {
 
       <div className="hero_data flex_48 flex justify_center items_center">
         <div>
-          <h1>
+          <h1
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+          >
+            {" "}
             Hi, I am <span className="name_color">Narasimhulu Vasam.</span>
           </h1>
           <h2>A Full Stack Web Developer.</h2>

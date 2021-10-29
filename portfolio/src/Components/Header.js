@@ -11,7 +11,7 @@ function Header() {
         <ul className="flex">
           <li className="each_nav">
             <a href="#projects">
-              <h4>projects</h4>
+              <h4>Projects</h4>
               <div className="underLine"></div>
             </a>
           </li>
